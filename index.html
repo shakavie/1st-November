@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -577,14 +578,14 @@ h1, h2, h3 {
 
   <div class="music-controls">
     <button class="secondary-btn" onclick="toggleMusic()" id="musicButton">
-      ♫ Pause
+      ♫ Play
     </button>
     <button class="primary-btn" onclick="nextScreen(3)">
       Continue →
     </button>
   </div>
 
-  <p class="music-status" id="musicStatus">♫ Now playing for you</p>
+  <p class="music-status" id="musicStatus">♫ Ready to play for you</p>
 
   <div class="progress-dots">
     <span class="dot"></span>
@@ -604,7 +605,7 @@ h1, h2, h3 {
 
   <p class="small-label">SOMETHING BLOOMING FOR YOU</p>
 
-  <h2 class="heading">Flowers<br>for a joy.</h2>
+  <h2 class="heading">A little flower,<br>a little joy.</h2>
 
   <p class="subtitle">
     I have something for you.
@@ -999,6 +1000,7 @@ function restartExperience() {
   bgMusic.currentTime = 0;
   cassette.classList.remove("playing");
   musicButton.textContent = "♫ Play";
+  musicStatus.textContent = "♫ Ready to play for you";
 
   showScreen(1);
 }
